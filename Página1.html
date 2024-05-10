@@ -21,6 +21,14 @@
 <button onclick="cambiarColor('blue')">Azul</button>
 <button onclick="cambiarColor('green')">Verde</button>
 <button onclick="cambiarColor('red')">Rojo</button>
+<script>
+    function aumentarTexto() {
+        var texto = document.getElementById('texto');
+        var fontSize = window.getComputedStyle(texto, null).getPropertyValue('font-size');
+        var currentSize = parseFloat(fontSize);
+        texto.style.fontSize = (currentSize + 2) + 'px'; 
+    }
+</script>
 
 
 </body>
