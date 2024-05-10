@@ -277,9 +277,35 @@
 	\begin{itemize}
 		\item Como se ve en el navegador
 	\end{itemize}  
+
 \section{Creación de las páginas 1 y 2}
- \subsection{Página 1}
- 
+	\subsection{Página 1}
+ 		\lstinputlisting[language=html, caption={Código de html},numbers=left,]{src/Pagina1.html}
+		\begin{itemize}
+			\item Los botones "Aumentar Tamaño" y "Disminuir Tamaño" llaman a las funciones aumentarTexto() y disminuirTexto() respectivamente, que aumentan o disminuyen el tamaño de la fuente del elemento con el id "texto" en 2 píxeles cada vez que se presionan.
+			\item Los botones "Azul", "Verde" y "Rojo" llaman a la función cambiarColor(color), que cambia el color del texto al color pasado como argumento cuando se presionan.
+			\item Asi se ve en el navegador
+		\end{itemize}  
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.0\textwidth,keepaspectratio]{img/pagina1.PNG}
+			%\includesvg{img/automata.svg}
+			%\label{img:mot2}
+			%\caption{Product backlog.}
+		\end{figure}
+	\subsection{Página 2}
+ 		\lstinputlisting[language=html, caption={Código de html},numbers=left,]{src/Pagina2.html}
+		\begin{itemize}
+			\item En esta página web, los usuarios pueden ingresar dos números y seleccionar la operación que desean realizar en un menú desplegable. Al hacer clic en el botón "Calcular", se ejecuta la función calcular() que determina la operación seleccionada y muestra el resultado en la página.
+			\item Asi se ve en el navegador
+		\end{itemize}  
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.0\textwidth,keepaspectratio]{img/pagina2.PNG}
+			%\includesvg{img/automata.svg}
+			%\label{img:mot2}
+			%\caption{Product backlog.}
+		\end{figure}
 \section{Referencias}
 \begin{itemize}			
 	\item \url{https://www.w3schools.com/javascript/default.asp}
