@@ -27,3 +27,41 @@
 <button onclick="calcular()">Calcular</button>
 
 <p>Resultado: <span id="resultado"></span></p>
+<script>
+    function calcular() {
+        var num1 = parseFloat(document.getElementById('numero1').value);
+        var num2 = parseFloat(document.getElementById('numero2').value);
+        var operacion = document.getElementById('operacion').value;
+        var resultado;
+
+        switch (operacion) {
+            case 'suma':
+                resultado = num1 + num2;
+                break;
+            case 'resta':
+                resultado = num1 - num2;
+                break;
+            case 'multiplicacion':
+                resultado = num1 * num2;
+                break;
+            case 'division':
+                resultado = num1 / num2;
+                break;
+            case 'and':
+                resultado = num1 & num2;
+                break;
+            case 'or':
+                resultado = num1 | num2;
+                break;
+            case 'xor':
+                resultado = num1 ^ num2;
+                break;
+            default:
+                resultado = "Operación no válida";
+        }
+
+        document.getElementById('resultado').innerText = resultado;
+    }
+</script>
+</body>
+</html>
