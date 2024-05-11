@@ -306,6 +306,32 @@
 			%\label{img:mot2}
 			%\caption{Product backlog.}
 		\end{figure}
+\section{Ejercicios propuestos de JavaScript}
+ 	\subsection{Ejercicio 1}
+		\begin{lstlisting}[language=bash,caption={Código del JavaScript}][H]
+function obtenerDiaSemana(numeroDia) {
+    var diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+    return diasSemana[numeroDia];
+}
+
+var fechaActual = new Date();
+var numeroDiaActual = fechaActual.getDay();
+var diaSemanaActual = obtenerDiaSemana(numeroDiaActual);
+console.log("Hoy es " + diaSemanaActual);
+		\end{lstlisting}
+	\begin{itemize}
+			\item A continuación una foto de la funcion probada en el browser
+		\end{itemize} 
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.0\textwidth,keepaspectratio]{img/ejercicio1.PNG}
+			%\includesvg{img/automata.svg}
+			%\label{img:mot2}
+			%\caption{Product backlog.}
+		\end{figure}
+		\begin{itemize}
+			\item Esta función toma un número de día (0 para domingo, 1 para lunes, etc.), lo utiliza como índice en un array que contiene los nombres de los días de la semana, y devuelve el nombre del día correspondiente.
+		\end{itemize} 
 \section{Referencias}
 \begin{itemize}			
 	\item \url{https://www.w3schools.com/javascript/default.asp}
